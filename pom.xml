@@ -31,23 +31,22 @@
   <build>
   	<plugins>
   		<plugin>
-			  <groupId>org.apache.maven.plugins</groupId>
 			  <artifactId>maven-compiler-plugin</artifactId>
 			  <version>3.14.0</version>
 			  <configuration>
-			    <!-- put your configurations here -->
+<!-- 			    <source>11</source>
+				<target>11</target> -->
 			  </configuration>
         </plugin>
 		<plugin>
-	          <groupId>org.apache.maven.plugins</groupId>
 	          <artifactId>maven-surefire-plugin</artifactId>
 	          <version>3.5.3</version>
 	          <configuration>
 		          <suiteXmlFiles>
 		            <suiteXmlFile>testng.xml</suiteXmlFile>
 		          </suiteXmlFiles>
-				  <forkCount>1</forkCount>
-				  <reuseForks>true</reuseForks>
+<!-- 				  <forkCount>1</forkCount>
+				  <reuseForks>true</reuseForks> -->
         	  </configuration>
         </plugin>
         <plugin>
@@ -57,4 +56,5 @@
   	</plugins>
   </build>
 </project>
+
 
